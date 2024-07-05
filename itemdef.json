@@ -1,0 +1,42 @@
+{
+  "appid": 3059750,
+  "items": [
+    {
+      "itemdefid": 1,
+      "type": "playtimegenerator",
+      "bundle": "100x80;101x20",
+      "name": "test dropper",
+      "name_color": "FFFFFF",
+      "background_color": "FFFFFF",
+      "item_slot": "generator",
+      "icon_url": "https://alienpls.com/cock/cock_small.png",
+      "icon_url_large": "https://alienpls.com/cock/cock_large.png",
+      "tradable": false,
+      "marketable": false
+    },
+    {
+      "itemdefid": 100,
+      "type": "item",
+      "name": "Cock",
+      "description": "🐓",
+      "name_color": "FFFFFF",
+      "background_color": "636363",
+      "icon_url": "https://alienpls.com/cock/cock_small.png",
+      "icon_url_large": "https://alienpls.com/cock/cock_large.png",
+      "tradable": true,
+      "marketable": true
+    },
+    {
+      "itemdefid": 101,
+      "type": "item",
+      "name": "Eggplant",
+      "description": "🍆",
+      "name_color": "A729E6",
+      "background_color": "636363",
+      "icon_url": "https://alienpls.com/cock/eggplant_small.png",
+      "icon_url_large": "https://alienpls.com/cock/eggplant_large.png",
+      "tradable": true,
+      "marketable": true
+    }
+  ]
+}
