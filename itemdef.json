@@ -4,7 +4,7 @@
     {
       "itemdefid": 1,
       "type": "playtimegenerator",
-      "bundle": "100x80;101x20",
+      "bundle": "100x45;101x5;102x45;103x5",
       "name": "test dropper",
       "name_color": "FFFFFF",
       "background_color": "FFFFFF",
@@ -35,6 +35,30 @@
       "background_color": "636363",
       "icon_url": "https://alienpls.com/cock/eggplant_small.png",
       "icon_url_large": "https://alienpls.com/cock/eggplant_large.png",
+      "tradable": true,
+      "marketable": true
+    },
+    {
+      "itemdefid": 102,
+      "type": "item",
+      "name": "Small cock",
+      "description": "🤏",
+      "name_color": "FFFFFF",
+      "background_color": "636363",
+      "icon_url": "https://alienpls.com/cock/smallcock_small.png",
+      "icon_url_large": "https://alienpls.com/cock/smallcock_large.png",
+      "tradable": true,
+      "marketable": true
+    },
+    {
+      "itemdefid": 103,
+      "type": "item",
+      "name": "Big cock",
+      "description": "😳",
+      "name_color": "FFFFFF",
+      "background_color": "636363",
+      "icon_url": "https://alienpls.com/cock/bigcock_small.png",
+      "icon_url_large": "https://alienpls.com/cock/bigcock_large.png",
       "tradable": true,
       "marketable": true
     }
