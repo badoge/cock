@@ -12,9 +12,15 @@ public class Cock : MonoBehaviour
 
     public TMP_Text cockCount;
 
+    private IEnumerator luckyCockCoroutine;
+    private IEnumerator dropCoroutine;
+
     // Start is called before the first frame update
     void Start()
     {
+        QualitySettings.vSyncCount = 1;
+        Application.targetFrameRate = 60;
+
         try
         {
             SteamClient.Init(3059750);
@@ -26,8 +32,10 @@ public class Cock : MonoBehaviour
             // Couldn't init for some reason (steam is closed etc)
         }
 
-        //InvokeRepeating("asd", 5.0f, 5.0f);
-
+        luckyCockCoroutine = LuckyCock();
+        dropCoroutine = Drop();
+        StartCoroutine(luckyCockCoroutine);
+        StartCoroutine(dropCoroutine);
 
     }//Start
 
@@ -55,16 +63,56 @@ public class Cock : MonoBehaviour
         if (cocks == 1)
         {
             TriggerAchievement("1_cock");
-            SteamInventory.TriggerItemDropAsync(1);
+        }
+
+        if (cocks == 69)
+        {
+            TriggerAchievement("69_cocks");
+        }
+
+        if (cocks == 420)
+        {
+            TriggerAchievement("420_cocks");
+        }
+
+        if (cocks == 1337)
+        {
+            TriggerAchievement("1337_cocks");
         }
 
     }//UpdateCount
+
+
+
+    private IEnumerator LuckyCock()
+    {
+        while (true)
+        {
+            if (Random.Range(0, 1000000) == 69)
+            {
+                TriggerAchievement("1_in_1mil");
+                StopCoroutine(luckyCockCoroutine);
+            }
+            yield return new WaitForSeconds(1);
+        }
+    }//LuckyCock
+
+
+    private IEnumerator Drop()
+    {
+        while (true)
+        {
+            SteamInventory.TriggerItemDropAsync(1);
+            yield return new WaitForSeconds(600);
+        }
+    }//Drop
 
 
     public void TriggerAchievement(string achievement)
     {
         var ach = new Achievement(achievement);
         ach.Trigger();
+        SteamInventory.TriggerItemDropAsync(1);
     }//TriggerAchievement
 
 }

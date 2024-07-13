@@ -4,8 +4,8 @@
     {
       "itemdefid": 1,
       "type": "playtimegenerator",
-      "bundle": "100x45;101x5;102x45;103x5",
-      "name": "test dropper",
+      "bundle": "100x45;101x5;102x40;103x5;104x5",
+      "name": "item dropper",
       "name_color": "FFFFFF",
       "background_color": "FFFFFF",
       "item_slot": "generator",
@@ -59,6 +59,18 @@
       "background_color": "636363",
       "icon_url": "https://alienpls.com/cock/bigcock_small.png",
       "icon_url_large": "https://alienpls.com/cock/bigcock_large.png",
+      "tradable": true,
+      "marketable": true
+    },
+    {
+      "itemdefid": 104,
+      "type": "item",
+      "name": "Egyptian Hieroglyph D052",
+      "description": "𓂸",
+      "name_color": "FFFFFF",
+      "background_color": "636363",
+      "icon_url": "https://alienpls.com/cock/130B8_small.png",
+      "icon_url_large": "https://alienpls.com/cock/130B8_large.png",
       "tradable": true,
       "marketable": true
     }
