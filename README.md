@@ -3,3 +3,6 @@
 A high effort & original AAA game with thrilling gameplay
 
 https://store.steampowered.com/app/3059750/Cock/
+
+
+[Update on the status of the game](https://github.com/badoge/cock/issues/1)
